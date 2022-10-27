@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           primaryColor: const Color.fromARGB(255, 4, 125, 141)),
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
