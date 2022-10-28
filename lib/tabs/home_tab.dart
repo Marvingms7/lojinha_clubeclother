@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -12,15 +13,24 @@ class HomeTab extends StatelessWidget {
               gradient: LinearGradient(colors: [
             Color.fromARGB(
               255,
-              216,
-              172,
-              156,
+              58,
+              56,
+              69,
             ),
-            Color.fromARGB(255, 239, 217, 209)
+            Color.fromARGB(255, 247, 204, 172)
           ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
         );
     return Stack(
-      children: [_buildBodyBack()],
+      children: [
+        _buildBodyBack(),
+        const CustomScrollView(
+          slivers: [
+            SliverAppBar(
+              floating: true,
+            )
+          ],
+        )
+      ],
     );
   }
 }
