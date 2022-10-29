@@ -21,12 +21,21 @@ class HomeTab extends StatelessWidget {
           ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
         );
     return Stack(
-      children: [
+      children: <Widget>[
         _buildBodyBack(),
         const CustomScrollView(
-          slivers: [
+          slivers: <Widget>[
             SliverAppBar(
               floating: true,
+              snap: true,
+              backgroundColor: Colors.transparent,
+              elevation: 0.0,
+              flexibleSpace: FlexibleSpaceBar(
+                title: Text(
+                  'Novidades',
+                ),
+                centerTitle: true,
+              ),
             )
           ],
         )
