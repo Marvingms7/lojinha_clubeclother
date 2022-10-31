@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "204734453495",
+    "project_id": "lojinhaclubeclother-c1a22",
+    "storage_bucket": "lojinhaclubeclother-c1a22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204734453495:android:2d40ec5d40a5eee0fe25f2",
+        "android_client_info": {
+          "package_name": "com.example.lojinha_clubeclother"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204734453495-hp0d0h4b58rvo6bni6pumcnekueuf8ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzEjV8rs1qdXfnUwhdJTe8YjAg1HV6u3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204734453495-hp0d0h4b58rvo6bni6pumcnekueuf8ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
