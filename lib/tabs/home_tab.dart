@@ -45,23 +45,20 @@ class HomeTab extends StatelessWidget {
                   .collection('home')
                   .orderBy('pos')
                   .get(),
-              builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-                if (snapshot.hasData) {
+              builder: (BuildContext context,
+                  AsyncSnapshot<QuerySnapshot> snapshot) {
+                if (!snapshot.hasData) {
                   return SliverToBoxAdapter(
                     child: Container(
                       height: 200.0,
                       alignment: Alignment.center,
                       child: const CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation(Colors.white),
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                       ),
                     ),
                   );
-                }
-                else {
-                  print(snapshot.data.documents.length);
-                }
+                } else {}
               },
-              
             )
           ],
         )
