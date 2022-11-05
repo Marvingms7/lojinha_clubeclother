@@ -1,9 +1,4 @@
-import 'dart:html';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HomeTab extends StatelessWidget {
@@ -46,7 +41,7 @@ class HomeTab extends StatelessWidget {
                   .orderBy('pos')
                   .get(),
               builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-                if (snapshot.hasData) {
+                if (!snapshot.hasData) {
                   return SliverToBoxAdapter(
                     child: Container(
                       height: 200.0,
