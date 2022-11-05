@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -18,6 +19,7 @@ class HomeTab extends StatelessWidget {
             Color.fromARGB(255, 247, 204, 172)
           ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
         );
+
     return Stack(
       children: <Widget>[
         _buildBodyBack(),
