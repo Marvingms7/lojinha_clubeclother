@@ -53,7 +53,7 @@ class HomeTab extends StatelessWidget {
                     ),
                   );
                 } else {
-                  print(snapshot.data.get.lenght);
+                  print(!snapshot.data().lenght);
                   return SliverToBoxAdapter(
                     child: Container(
                       height: 200.0,
