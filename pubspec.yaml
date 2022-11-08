@@ -45,6 +45,7 @@ dependencies:
   url_launcher: ^6.1.6
   firebase_core_platform_interface: ^4.4.1
   flutterfire_cli: ^0.2.6+1
+
   
 
 

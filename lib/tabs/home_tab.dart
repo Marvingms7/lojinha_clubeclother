@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 class HomeTab extends StatelessWidget {
   const HomeTab({super.key});
 
@@ -53,15 +53,9 @@ class HomeTab extends StatelessWidget {
                     ),
                   );
                 } else {
-                  print(!snapshot.data().lenght);
-                  return SliverToBoxAdapter(
-                    child: Container(
-                      height: 200.0,
-                      alignment: Alignment.center,
-                      child: const CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                      ),
-                    ),
+        
+                  return StaggeredGrid.count(
+                    crossAxisCount: 4
                   );
                 }
               },
