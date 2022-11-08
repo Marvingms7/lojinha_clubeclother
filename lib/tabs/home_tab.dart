@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
 class HomeTab extends StatelessWidget {
   const HomeTab({super.key});
 
@@ -53,9 +54,10 @@ class HomeTab extends StatelessWidget {
                     ),
                   );
                 } else {
-        
                   return StaggeredGrid.count(
-                    crossAxisCount: 4
+                    crossAxisCount: 4,
+                    mainAxisSpacing: 4,
+                    crossAxisSpacing: 4,
                   );
                 }
               },
