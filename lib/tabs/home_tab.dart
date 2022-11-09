@@ -54,10 +54,16 @@ class HomeTab extends StatelessWidget {
                     ),
                   );
                 } else {
-                  return StaggeredGrid.count(
-                    crossAxisCount: 4,
-                    mainAxisSpacing: 4,
-                    crossAxisSpacing: 4,
+                  return SliverToBoxAdapter(
+                    child: StaggeredGrid.count(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 1.0,
+                      crossAxisSpacing: 1.0,
+                      children: const [StaggeredGrid: snapshot.data.map((doc){
+                        return StaggeredGridTile.count(crossAxisCellCount: crossAxisCellCount, mainAxisCellCount: mainAxisCellCount, child: child)
+                      }),],
+                      
+                    ),
                   );
                 }
               },
