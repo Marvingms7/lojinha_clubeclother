@@ -58,7 +58,7 @@ class HomeTab extends StatelessWidget {
                     child: StaggeredGrid.count(
                       crossAxisCount: 2,
                       mainAxisSpacing: 2.0,
-                      crossAxisSpacing: 2.0,
+                      crossAxisSpacing: 1.0,
                       
                     ),
                   );
